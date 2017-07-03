@@ -17,6 +17,7 @@ public class BadEnd : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        SceneManager.LoadScene("BadEnd");
+        if(other.tag =="Player")
+            SceneManager.LoadScene("BadEnd");
     }
 }

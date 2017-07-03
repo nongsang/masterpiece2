@@ -38,7 +38,6 @@ public class NPC1 : MonoBehaviour {
             ani.Play("standard_run");
             setDesTarget3();
             nav.speed = 5;
-            
         }
 	}
 

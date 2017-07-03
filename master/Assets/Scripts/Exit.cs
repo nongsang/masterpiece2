@@ -30,7 +30,7 @@ public class Exit : MonoBehaviour {
             obj = GameObject.FindWithTag("NPC2").GetComponent<NPC2>().getGameObject();
             GameObject.Destroy(obj);
         }
-        else
+        else if(other.tag == "Player")
         {
             SceneManager.LoadScene("Road");
         }

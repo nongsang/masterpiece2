@@ -6,10 +6,11 @@ public class GasPipe : MonoBehaviour {
 
     bool setValveRotation;
     public float rotationSpeed = 200.0f;
+    GameObject ES;
 
     // Use this for initialization
     void Start () {
-		
+        ES = GameObject.Find("EventSwitch");
 	}
 	
 	// Update is called once per frame
@@ -21,6 +22,7 @@ public class GasPipe : MonoBehaviour {
             {
                 setValveRotation = false;
             }
+            ES.SendMessage("SetValve", SendMessageOptions.DontRequireReceiver);
         }
 	}
 

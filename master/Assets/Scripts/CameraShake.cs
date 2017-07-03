@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class CameraShake : MonoBehaviour {
 
-    public Transform camTransform;
+    private Transform camTransform;
+    private GameObject[] gO;
     public float shake = 0.0f;
 
     public float shakeAmount = 0.7f;
@@ -16,8 +17,9 @@ public class CameraShake : MonoBehaviour {
     {
         if (camTransform == null)
         {
-            camTransform = GetComponent(typeof(Transform)) as Transform;
+            camTransform = GetComponent<Transform>();
         }
+        gO = GameObject.FindGameObjectsWithTag("OBJECT");
     }
 
     void OnEnable()
@@ -35,6 +37,10 @@ public class CameraShake : MonoBehaviour {
         if (shake > 0)
         {
             camTransform.localPosition = originalPos + Random.insideUnitSphere * shakeAmount;
+            foreach (GameObject o in gO)
+            {
+                o.SendMessage("Switch", SendMessageOptions.DontRequireReceiver);
+            }
 
             shake -= Time.deltaTime * decreaseFactor;
         }
@@ -43,6 +49,11 @@ public class CameraShake : MonoBehaviour {
             shake = 0f;
             camTransform.localPosition = originalPos;
         }
+    }
 
+    void Switch()
+    {
+        shake = 3.0f;
+        Update();
     }
 }

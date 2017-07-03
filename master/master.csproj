@@ -180,14 +180,18 @@
     <Compile Include="Assets\Scripts\EleDoorRight2.cs" />
     <Compile Include="Assets\Scripts\ElevatorButton.cs" />
     <Compile Include="Assets\Scripts\ElevatorButtonDown.cs" />
+    <Compile Include="Assets\Scripts\EventSwitch.cs" />
     <Compile Include="Assets\Scripts\Exit.cs" />
     <Compile Include="Assets\Scripts\FadeInOut.cs" />
     <Compile Include="Assets\Scripts\GasPipe.cs" />
     <Compile Include="Assets\Scripts\GasValve.cs" />
+    <Compile Include="Assets\Scripts\NPC.cs" />
     <Compile Include="Assets\Scripts\NPC1.cs" />
     <Compile Include="Assets\Scripts\NPC2.cs" />
     <Compile Include="Assets\Scripts\breakerCover.cs" />
-    <Compile Include="Assets\Scripts\breakerSwitch.cs" />
+    <Compile Include="Assets\Scripts\breakerSwitch1.cs" />
+    <Compile Include="Assets\Scripts\breakerSwitch2.cs" />
+    <Compile Include="Assets\Scripts\breakerSwitch3.cs" />
     <Compile Include="Assets\ZRNAssets\Cars\Scripts\AICarMove.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -180,6 +180,7 @@
     <Compile Include="Assets\Scripts\EleDoorRight2.cs" />
     <Compile Include="Assets\Scripts\ElevatorButton.cs" />
     <Compile Include="Assets\Scripts\ElevatorButtonDown.cs" />
+    <Compile Include="Assets\Scripts\EventStart.cs" />
     <Compile Include="Assets\Scripts\EventSwitch.cs" />
     <Compile Include="Assets\Scripts\Exit.cs" />
     <Compile Include="Assets\Scripts\FadeInOut.cs" />

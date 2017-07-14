@@ -13,11 +13,11 @@ public class Earthquake_Addforce : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        Vector3 fDir = Vector3.forward * Random.Range(-1.0f, 1.0f);
-        ////Vector3 uDir = Vector3.up * Random.Range(-1.0f, 1.0f);
-        Vector3 rDir = Vector3.right * Random.Range(-1.0f, 1.0f);
+        //Vector3 fDir = Vector3.forward * Random.Range(-1.0f, 1.0f);
+        //////Vector3 uDir = Vector3.up * Random.Range(-1.0f, 1.0f);
+        //Vector3 rDir = Vector3.right * Random.Range(-1.0f, 1.0f);
 
-        Vector3 Dir = fDir + rDir;
+        //Vector3 Dir = fDir + rDir;
         //if (Input.GetKeyDown(KeyCode.N))
         //{
         //    GetComponent<Rigidbody>().AddForce(Random.insideUnitSphere * speed);
@@ -27,6 +27,7 @@ public class Earthquake_Addforce : MonoBehaviour {
     }
     public void Switch()
     {
+		speed = 400.0f;
         //int Randomnum = Random.Range(0,2);
         //switch(Randomnum)
         Vector3 fDir = Vector3.forward * Random.Range(-1.0f, 1.0f);
@@ -36,4 +37,16 @@ public class Earthquake_Addforce : MonoBehaviour {
         //GetComponent<Rigidbody>().AddForce(Random.insideUnitSphere * speed);
         GetComponent<Rigidbody>().AddForce(Dir * speed);
     }
+
+	void EStart()
+	{
+		speed = 100.0f;
+
+		Vector3 fDir = Vector3.forward * Random.Range(-1.0f, 1.0f);
+		Vector3 rDir = Vector3.right * Random.Range(-1.0f, 1.0f);
+
+		Vector3 Dir = fDir + rDir;
+
+		GetComponent<Rigidbody>().AddForce(Dir * speed);
+	}
 }

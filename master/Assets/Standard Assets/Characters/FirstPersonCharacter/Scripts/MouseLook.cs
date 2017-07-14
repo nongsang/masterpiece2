@@ -85,8 +85,11 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
             if (m_cursorIsLocked)
             {
-                Cursor.lockState = CursorLockMode.Locked;
-                Cursor.visible = true;
+				Cursor.lockState = CursorLockMode.Locked;
+				Cursor.visible = true;
+				
+				
+				
             }
             else if (!m_cursorIsLocked)
             {

@@ -9,6 +9,8 @@ public class NPC2 : MonoBehaviour {
     public Transform target;
     Animator ani;
 
+	bool on = false;
+
 	// Use this for initialization
 	void Start () {
         nav = GetComponent<NavMeshAgent>();
@@ -19,7 +21,7 @@ public class NPC2 : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKeyDown(KeyCode.T))
+        if (on)
         {
             ani.Play("standard_run");
             nav.enabled = true;
@@ -32,4 +34,9 @@ public class NPC2 : MonoBehaviour {
     {
         return gameObject;
     }
+
+	void Switch()
+	{
+		on = true;
+	}
 }

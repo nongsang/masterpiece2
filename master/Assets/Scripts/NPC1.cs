@@ -10,6 +10,8 @@ public class NPC1 : MonoBehaviour {
     int goTargetNum = 1;
     Animator ani;
 
+	bool on = false;
+
 	// Use this for initialization
 	void Start () {
         nav = GetComponent<NavMeshAgent>();
@@ -33,7 +35,7 @@ public class NPC1 : MonoBehaviour {
                 setDesTarget1();
             }
         }
-        if (Input.GetKeyDown(KeyCode.T))
+        if (on)
         {
             ani.Play("standard_run");
             setDesTarget3();
@@ -61,4 +63,9 @@ public class NPC1 : MonoBehaviour {
     {
         return gameObject;
     }
+
+	void Switch()
+	{
+		on = true;
+	}
 }

@@ -9,12 +9,20 @@ public class EventStart : MonoBehaviour {
 	GameObject[] NPC2;
 	BoxCollider tr;
 
-	// Use this for initialization
-	void Start () {
-		tr = GetComponent<BoxCollider>();
-		Camera = GameObject.Find("FirstPersonCharacter");
-		NPC1 = GameObject.FindGameObjectWithTag("NPC1");
-		NPC2 = GameObject.FindGameObjectsWithTag("NPC2");
+    private void Awake()
+    {
+        tr = GetComponent<BoxCollider>();
+        Camera = GameObject.Find("FirstPersonCharacter");
+        NPC1 = GameObject.FindGameObjectWithTag("NPC1");
+        NPC2 = GameObject.FindGameObjectsWithTag("NPC2");
+    }
+
+    // Use this for initialization
+    void Start () {
+		//tr = GetComponent<BoxCollider>();
+		//Camera = GameObject.Find("FirstPersonCharacter");
+		//NPC1 = GameObject.FindGameObjectWithTag("NPC1");
+		//NPC2 = GameObject.FindGameObjectsWithTag("NPC2");
 	}
 	
 	// Update is called once per frame

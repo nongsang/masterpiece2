@@ -76,12 +76,6 @@
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="master.Plugins.csproj">
@@ -189,7 +183,9 @@
     <Compile Include="Assets\Scripts\NPC.cs" />
     <Compile Include="Assets\Scripts\NPC1.cs" />
     <Compile Include="Assets\Scripts\NPC2.cs" />
+    <Compile Include="Assets\Scripts\PartitionCtrl.cs" />
     <Compile Include="Assets\Scripts\breakerCover.cs" />
+    <Compile Include="Assets\Scripts\breakerSwitch.cs" />
     <Compile Include="Assets\Scripts\breakerSwitch1.cs" />
     <Compile Include="Assets\Scripts\breakerSwitch2.cs" />
     <Compile Include="Assets\Scripts\breakerSwitch3.cs" />

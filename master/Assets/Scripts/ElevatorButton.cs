@@ -7,13 +7,22 @@ public class ElevatorButton : MonoBehaviour {
     MeshRenderer mr;
     GameObject obj = null;
     GameObject Eobj1, Eobj2;
+    bool eventOn = false;
 
-	// Use this for initialization
-	void Start () {
+    private void Awake()
+    {
         mr = GetComponent<MeshRenderer>();
         obj = GameObject.Find("ElevatorButtonDown");
         Eobj1 = GameObject.Find("EleDoorLeft");
         Eobj2 = GameObject.Find("EleDoorRight");
+    }
+
+    // Use this for initialization
+    void Start () {
+        //mr = GetComponent<MeshRenderer>();
+        //obj = GameObject.Find("ElevatorButtonDown");
+        //Eobj1 = GameObject.Find("EleDoorLeft");
+        //Eobj2 = GameObject.Find("EleDoorRight");
     }
 	
 	// Update is called once per frame
@@ -23,10 +32,17 @@ public class ElevatorButton : MonoBehaviour {
 
     private void OnMouseDown()
     {
-        mr.enabled = false;
-        obj.SendMessage("setOnMeshRender", SendMessageOptions.DontRequireReceiver);
-        Eobj1.SendMessage("setDoorState", SendMessageOptions.DontRequireReceiver);
-        Eobj2.SendMessage("setDoorState", SendMessageOptions.DontRequireReceiver);
+        if (eventOn)
+        {
+            mr.enabled = false;
+            obj.SendMessage("setOnMeshRender", SendMessageOptions.DontRequireReceiver);
+            Eobj1.SendMessage("setDoorState", SendMessageOptions.DontRequireReceiver);
+            Eobj2.SendMessage("setDoorState", SendMessageOptions.DontRequireReceiver);
+        }
     }
-    
+
+    private void Enable()
+    {
+        eventOn = true;
+    }
 }

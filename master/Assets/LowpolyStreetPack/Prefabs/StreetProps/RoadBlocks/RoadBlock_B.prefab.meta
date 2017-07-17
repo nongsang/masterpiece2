@@ -1,9 +1,3 @@
-fileFormatVersion: 2
-guid: 68168b1d080f7ff4da5ac899be391c39
-labels:
-- roadblock
-NativeFormatImporter:
-  mainObjectFileID: -1
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
+version https://git-lfs.github.com/spec/v1
+oid sha256:48afbd8a337bff09979b243169039b832bff8e09a6b9e0a1fc5af19a3be8cf7c
+size 190

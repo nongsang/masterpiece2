@@ -1,9 +1,3 @@
-fileFormatVersion: 2
-guid: 05a609dfeaa0a8342a84c707df86f647
-labels:
-- foliage
-NativeFormatImporter:
-  mainObjectFileID: -1
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
+version https://git-lfs.github.com/spec/v1
+oid sha256:4140a092a62b4f8956be0668cf14792a5fd7a1268f133a973c25d3df34eb1e8d
+size 188

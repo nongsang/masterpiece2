@@ -1,11 +1,3 @@
-fileFormatVersion: 2
-guid: 8fee0f6f57f4115409b5723de5e2a282
-labels:
-- set
-- marking
-- road
-NativeFormatImporter:
-  mainObjectFileID: -1
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
+version https://git-lfs.github.com/spec/v1
+oid sha256:a73bf8ccb5eb269a5690a6ff56787aa95e1d2b2dd78febf80881752e5173bdc5
+size 203

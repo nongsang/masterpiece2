@@ -1,11 +1,3 @@
-fileFormatVersion: 2
-guid: 32af3f393ff0d7f4181a38ba0c48bc83
-labels:
-- lamp
-- light
-- trafic
-NativeFormatImporter:
-  mainObjectFileID: -1
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
+version https://git-lfs.github.com/spec/v1
+oid sha256:d0b3d74a95628fd615a7102bb90c098ac761c6d576899fd833d8da4b7d103eef
+size 204

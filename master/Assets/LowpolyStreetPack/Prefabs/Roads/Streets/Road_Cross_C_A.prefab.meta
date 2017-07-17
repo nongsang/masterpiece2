@@ -1,11 +1,3 @@
-fileFormatVersion: 2
-guid: 349b813d00b77df41b5431df22c4012c
-labels:
-- road
-- tile
-- set
-NativeFormatImporter:
-  mainObjectFileID: -1
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
+version https://git-lfs.github.com/spec/v1
+oid sha256:5ffeba2894116ca42156ffa0a91e17d8ca4d168aef69150b782400d1bd7a8d97
+size 200

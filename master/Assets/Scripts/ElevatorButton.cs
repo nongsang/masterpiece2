@@ -7,22 +7,14 @@ public class ElevatorButton : MonoBehaviour {
     MeshRenderer mr;
     GameObject obj = null;
     GameObject Eobj1, Eobj2;
-    bool eventOn = false;
+    bool enable = false;
 
-    private void Awake()
-    {
+	// Use this for initialization
+	void Start () {
         mr = GetComponent<MeshRenderer>();
         obj = GameObject.Find("ElevatorButtonDown");
         Eobj1 = GameObject.Find("EleDoorLeft");
         Eobj2 = GameObject.Find("EleDoorRight");
-    }
-
-    // Use this for initialization
-    void Start () {
-        //mr = GetComponent<MeshRenderer>();
-        //obj = GameObject.Find("ElevatorButtonDown");
-        //Eobj1 = GameObject.Find("EleDoorLeft");
-        //Eobj2 = GameObject.Find("EleDoorRight");
     }
 	
 	// Update is called once per frame
@@ -32,7 +24,7 @@ public class ElevatorButton : MonoBehaviour {
 
     private void OnMouseDown()
     {
-        if (eventOn)
+        if (enable)
         {
             mr.enabled = false;
             obj.SendMessage("setOnMeshRender", SendMessageOptions.DontRequireReceiver);
@@ -41,8 +33,8 @@ public class ElevatorButton : MonoBehaviour {
         }
     }
 
-    private void Enable()
+    private void Switch()
     {
-        eventOn = true;
+        enable = true;
     }
 }

@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class Exit : MonoBehaviour {
 
     GameObject obj;
+    bool enable = false;
 
 	// Use this for initialization
 	void Start () {
@@ -30,9 +31,13 @@ public class Exit : MonoBehaviour {
             obj = GameObject.FindWithTag("NPC2").GetComponent<NPC2>().getGameObject();
             GameObject.Destroy(obj);
         }
-        else if(other.tag == "Player")
+        else if(other.tag == "Player" & enable)
         {
             SceneManager.LoadScene("Road");
         }
+    }
+    void Switch()
+    {
+        enable = true;
     }
 }

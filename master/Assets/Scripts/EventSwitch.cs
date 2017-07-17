@@ -12,23 +12,16 @@ public class EventSwitch : MonoBehaviour {
     bool breakerSwitch3;
     bool valve;
 
-    private GameObject elevator;
+    GameObject Elevator;
 
-    private void Awake()
-    {
-        Camera = GameObject.Find("FirstPersonCharacter");
-        elevator = GameObject.Find("ElevatorButton");
-    }
-
-    // Use this for initialization
-    void Start () {
+	// Use this for initialization
+	void Start () {
         //Oj = GameObject.FindWithTag("Mug");
         //Oj = GameObject.FindGameObjectsWithTag("OBJECT");
 
-        //Camera = GameObject.Find("FirstPersonCharacter");
-        //elevator = GameObject.Find("ElevatorButton");
-
-    }
+        Camera = GameObject.Find("FirstPersonCharacter");
+        Elevator = GameObject.Find("ElevatorButton");
+	}
 	
 	// Update is called once per frame
 	void Update () {
@@ -39,7 +32,7 @@ public class EventSwitch : MonoBehaviour {
         if(other.tag == "Player" && (breakerSwitch1 & breakerSwitch2 & breakerSwitch3 & valve == true))
         {
             Camera.SendMessage("Switch",SendMessageOptions.DontRequireReceiver);
-            elevator.SendMessage("Enable", SendMessageOptions.DontRequireReceiver);
+            Elevator.SendMessage("Switch", SendMessageOptions.DontRequireReceiver);
             //Oj.SendMessage("Switch", SendMessageOptions.DontRequireReceiver);
             //foreach (GameObject o in Oj)
             //{

@@ -1,9 +1,3 @@
-fileFormatVersion: 2
-guid: 28d375a433cc78c4fa3db00df795f14d
-labels:
-- hidrant
-NativeFormatImporter:
-  mainObjectFileID: -1
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
+version https://git-lfs.github.com/spec/v1
+oid sha256:04c82a067f32646f5062bcdcef98ea577c0e079c8dc64a38b9cc51d5258752dd
+size 179
